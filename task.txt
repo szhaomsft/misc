@@ -1,0 +1,37 @@
+sequence to class
+	Tensorflow: LSTM-Human-Activity-Recognition https://github.com/guillaume-chevalier/LSTM-Human-Activity-Recognition
+
+sequence to sequence (S2S)
+	CNTK CMUDict https://github.com/Microsoft/CNTK
+
+sequence to sequence (tagging)
+	CNTK PennTreebank https://github.com/Microsoft/CNTK
+
+machine translation
+text summary 
+	OpenNMT https://github.com/OpenNMT/OpenNMT
+	
+
+speech recognition
+	Kaldi https://github.com/kaldi-asr/kaldi
+
+speech synthsis
+	merlin  https://github.com/CSTR-Edinburgh/merlin
+
+paraphrasing for style
+	https://github.com/tokestermw/tensorflow-shakespeare
+	
+image style transfer
+	Neural style https://github.com/anishathalye/neural-style
+
+
+
+Chatbot
+	https://github.com/Conchylicultor/DeepQA
+
+CNN sentence classification
+	https://github.com/yoonkim/CNN_sentence
+	https://github.com/dennybritz/cnn-text-classification-tf
+
+Syntax parser
+	Parsey McParseface https://github.com/tensorflow/models/tree/master/syntaxnet
