@@ -1,0 +1,11 @@
+Install torch
+
+	http://opennmt.net/Guide/
+
+Tips	
+	http://forum.opennmt.net/t/training-english-german-wmt15-nmt-engine/29
+	http://forum.opennmt.net/t/training-romance-multi-way-model/86
+
+Recipes
+	https://github.com/OpenNMT/Recipes/tree/master/baseline-1M-enfr
+
