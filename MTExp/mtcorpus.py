@@ -65,10 +65,10 @@ def SplitIntoThree(file, file1):
     testf1 = codecs.open(file1 + ".test", 'w', 'utf-8')
     for i in range(0, len(arr)):
         t = random()
-        if t > 0.2:
+        if t > 0.002:
             trainf.write(arr[i])
             trainf1.write(arr1[i])
-        elif t > 0.1:
+        elif t > 0.001:
             devf.write(arr[i])
             devf1.write(arr1[i])
         else:
@@ -133,11 +133,11 @@ outFolder = "./"
 
 #SplitCorpus("C:/github/MT/parallel-umcorpus-v1/UM-Corpus/data/Bilingual/Laws/Bi-Laws.txt", "./Bi-Laws.txt", "en-US", "zh-CN")
 
-#for file in files:
-#    print("processing " + file)
-#    head, filename = os.path.split(file)
-#    outFile = outFolder + filename;
-#    SplitCorpus(file, outFile, "en-US", "zh-CN")
+for file in files:
+    print("processing " + file)
+    head, filename = os.path.split(file)
+    outFile = outFolder + filename;
+    SplitCorpus(file, outFile, "en-US", "zh-CN")
 
 MergeFiles(outFolder + "/*.en-US.train", "en-US.train.txt")
 MergeFiles(outFolder + "/*.en-US.dev", "en-US.dev.txt")

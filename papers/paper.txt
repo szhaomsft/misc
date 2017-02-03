@@ -24,5 +24,9 @@ Highway Long Short-Term Memory RNNs for Distant Speech Recognition
 	http://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/HighwayLSTM-ICASSP2016-1.pdf
 	https://yq.aliyun.com/articles/2308
 
+AN EMPIRICAL EXPLORATION OF CTC ACOUSTIC MODELS
+	https://www.cs.cmu.edu/~ymiao/pub/icassp2016_ctc.pdf
+	https://www2.ee.washington.edu/student/jsalt2015/oslides/DeepLearning4ASRTutorial.pdf
 
-
+Developing a unit selection voice given audio without corresponding text
+	http://asmp.eurasipjournals.springeropen.com/articles/10.1186/s13636-016-0084-y
