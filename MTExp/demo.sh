@@ -24,7 +24,8 @@ th preprocess.lua -train_src ${src_train}.tok -train_tgt ${tgt_train}.tok -valid
 echo "train"
 th train.lua -data ${save_data}-train.t7 -save_model ${save_model} -gpuid 1
 
-cp -f mydata/${save_model}"_epoch13_"*".t7" mydata/${save_model}"_final.t7"
+
+cp ${save_model}_epoch13_*.t7 ${save_model}_final.t7
 
 echo "test"
 th translate.lua  -replace_unk  -model ${save_model}_final.t7 -src ${src_test}.tok -output ${tgt_test}.out.tok -gpuid 1
@@ -36,3 +37,4 @@ perl multi-bleu.perl ${tgt_test} < ${tgt_test}.out.detok > ${tgt_test}.bleu.txt
 
 echo "convert model to cpu"
 th tools/release_model.lua -force -model ${save_model}_final.t7   -output_model${save_model}_final_cpu.t7  -gpuid 1
+
